@@ -7,6 +7,15 @@ document.querySelector("#yes").addEventListener("click", function () {
     window.open('https://youtu.be/nAGDqGfb75s?si=F3ZDliYilHHvEmaX', '_blank');
     
     card.style.backgroundImage = "url('surpressaaaeuvoltei.gif')";
+    card.style.backgroundSize = "cover";
+    card.style.backgroundPosition = "center";
+    card.style.backgroundRepeat = "no-repeat";
+    card.style.position = "absolute";
+    card.style.left = "20px";
+    card.style.top = "20px";
+    card.style.width = "320px";
+    card.style.height = "320px";
+    card.style.zIndex = "0"; // ou remova esta linha
     question.style.display = "none";
     message.style.display = "flex";
     
