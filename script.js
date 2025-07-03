@@ -6,7 +6,7 @@ document.querySelector("#yes").addEventListener("click", function () {
     // Adiciona música romântica
     window.open('https://youtu.be/nAGDqGfb75s?si=F3ZDliYilHHvEmaX', '_blank');
     
-    card.style.backgroundImage = "url('casal_apaixonado.gif')";
+    card.style.backgroundImage = "url('surpressaaaeuvoltei.gif')";
     question.style.display = "none";
     message.style.display = "flex";
     
