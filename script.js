@@ -2,20 +2,27 @@ let card = document.getElementById("card");
 document.querySelector("#yes").addEventListener("click", function () {
     let question = document.getElementById("question");
     let message = document.getElementById("answer");
+    let gif = document.getElementById("gif");
 
     // Adiciona música romântica
     window.open('https://youtu.be/nAGDqGfb75s?si=F3ZDliYilHHvEmaX', '_blank');
     
-    card.style.backgroundImage = "url('surpressaaaeuvoltei.gif')";
-    card.style.backgroundSize = "cover";
-    card.style.backgroundPosition = "center";
-    card.style.backgroundRepeat = "no-repeat";
-    card.style.position = "absolute";
-    card.style.left = "20px";
-    card.style.top = "20px";
-    card.style.width = "320px";
-    card.style.height = "320px";
-    card.style.zIndex = "0"; // ou remova esta linha
+    // Remove alterações no card
+    card.style.backgroundImage = "";
+    card.style.backgroundSize = "";
+    card.style.backgroundPosition = "";
+    card.style.backgroundRepeat = "";
+    card.style.position = "";
+    card.style.left = "";
+    card.style.top = "";
+    card.style.width = "";
+    card.style.height = "";
+    card.style.zIndex = "";
+
+    // Mostra o gif na resposta
+    gif.src = "surpressaaaeuvoltei.gif";
+    gif.style.display = "block";
+
     question.style.display = "none";
     message.style.display = "flex";
     

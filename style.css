@@ -25,11 +25,21 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.5);
     transition: all 0.3s ease;
 }
-
-#answer {
-  position: relative;
-  z-index: 1;
+.answer {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
 }
+
+.answer img#gif {
+    max-width: 320px;
+    max-height: 320px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
